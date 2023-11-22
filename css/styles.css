@@ -281,8 +281,8 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   border-radius: 4px;
   background-color: #fcfcfc;
   padding: 72px 24px 24px;
@@ -546,7 +546,11 @@ header {
   .menu-burger-btn {
     display: none;
   }
-  /* for tablet */
+  /* modal for tablet */
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
