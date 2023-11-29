@@ -240,7 +240,6 @@ header {
   border-radius: 50%;
   background-color: #4d5ae5;
   color: #f4f4fd;
-  margin-bottom: 40px;
 }
 .icons {
   display: flex;
@@ -540,7 +539,9 @@ header {
 .hero-btn:focus {
   background-color: #404bbf;
 }
+
 /* section 1 for mobile*/
+
 .feature {
   padding: 96px 0;
   /* margin: 0 auto; */
@@ -575,6 +576,76 @@ header {
 } */
 
 /* section 2 for mobile */
+.team {
+  background-color: #f4f4fd;
+  padding: 96px 0;
+}
+.title {
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.team-list {
+  background-color: #f4f4fd;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+}
+.name {
+  padding: 32px 0;
+  max-width: 232px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-list-item {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-list:first-child {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.team-list-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.team-text {
+  color: #434455;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.social-list-items {
+  display: flex;
+
+  gap: 24px;
+}
+
+.icons:hover,
+.icons:focus {
+  background-color: #404bbf;
+}
+.social-list-icon > .icons {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 @media screen and (min-width: 768px) {
   /* header for tablet*/
@@ -677,9 +748,6 @@ header {
   }
 
   /* section 1  for tablet*/
-  .feature {
-    padding: 96px 0;
-  }
   .feature-title-bolt {
     text-align: left;
   }
@@ -696,8 +764,14 @@ header {
   }
   .feature-list-item {
     width: calc((100% - 24px) / 2);
-  } */
+  } 
   .feature-list-item:not(:nth-last-child(-n + 2)) {
+  }*/
+
+  /* section 2 for tablet*/
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -778,5 +852,8 @@ header {
     font-weight: 400;
   }
   /* section 2 for desktop */
+  .team {
+    padding: 120px 0;
+  }
   /* section 3 for desktop */
 }
