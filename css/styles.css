@@ -494,7 +494,9 @@ header {
     ),
     url(../images/bg/mob-bg.jpg);
 }
-@media screen and (min-resolution: 192dpi) {
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -731,7 +733,9 @@ header {
       url("../images/bg/tabl-bg.jpg");
     padding: 112px 0;
   }
-  @media screen and (min-resolution: 192dpi) {
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -797,7 +801,9 @@ header {
       url("../images/bg/bg.jpg");
     padding: 188px 0;
   }
-  @media screen and (min-resolution: 192dpi) {
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
